@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <p>Weather Api</p>
+        </div>
+        <div class="fetchButton">
+            <button id="fetchbtn">Fetch Data</button>
+        </div>
+    </div>
+
+    <div class="results">
+        <div class="welcome">
+            <p> Welcome To The Weather App</p>
+            <div class="location-info">
+                <p> Here is your cureent Location</p>
+            </div>
+        </div>
+        <div class="latgAndLong">
+            <div class="lat">
+                <p>Lat:</p><span id="lat-result"></span>
+            </div>
+            <div class="long">
+                <p>Long:</p><span id="long-result"></span>
+            </div>
+
+            
+        </div>
+        <div class="map">
+            <div id="map-container"></div>
+        </div>
+    </div>
+
+    <div class="endResults">
+        <p>Your Weather Data</p>
+        <div class="data_list">
+            <div id="location" class="all-data">
+                <p>Location:</p><span id="Location"></span>
+            </div>
+            <div class="all-data">
+                <p>Wind Speed:</p><span  id="Wind"></span><p>kmph</p>
+            </div>
+            <div  class="all-data">
+                <p>Humidity:</p><span id="Humidity"></span>
+            </div>
+            <div class="all-data">
+                <p>Time Zone:</p><span id="Time" ></span>
+            </div>
+            <div  class="all-data">
+                <p>Pressure:</p><span id="Pressure"></span><p>atm</p>
+            </div>
+            <div  class="all-data">
+                <p>Wind Direction:</p><span id="Wind_Direction"></span>
+            </div>
+            <div  class="all-data">
+                <p>Sunrise:</p><span id="Sunrise"></span>
+            </div>
+            <div  class="all-data">
+                <p>Feels like:</p><span id="Feels"></span>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="script.js" defer>
+
+    </script>
+</body>
+</html>
