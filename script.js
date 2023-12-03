@@ -23,7 +23,8 @@ document.addEventListener("DOMContentLoaded", () => {
           longResult.textContent = lon;
 
           const mapIframe = document.createElement("div");
-          mapIframe.innerHTML = `<iframe class="mapData" src="https://maps.google.com/maps?q=${lat}, ${lon}&z=15&output=embed" width="1130" height="450" frameborder="0" style="border:0"></iframe`;
+          mapIframe.className="actualmap";
+          mapIframe.innerHTML = `<iframe class="mapData" src="https://maps.google.com/maps?q=${lat}, ${lon}&z=15&output=embed" width="98%" height="450" frameborder="0" style="border:0"></iframe`;
         
 
           mapContainer.appendChild(mapIframe);
@@ -55,8 +56,4 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-// fetchData.addEventListener("click",(event)=>{
-//     document.querySelector(".container").style.display="none";
-//     document.querySelector(".results").style.display="block";
-//     document.querySelector(".endResults").style.display="block";
-// })
+
