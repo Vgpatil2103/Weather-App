@@ -7,6 +7,7 @@
 
 .results{
     padding-left: 3rem;
+   
 }
 .welcome{
     display: flex;
@@ -47,6 +48,7 @@ flex-shrink: 0;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 100%;
 }
 
 .heading>p{
@@ -114,6 +116,7 @@ display: none;
     padding-left: 3rem;
     padding-top: 2rem;
     display: none;
+    width: 100%;
 }
 .endResults>p{
     width: 912px;
@@ -188,4 +191,34 @@ text-wrap: nowrap;
     .data_list{
         padding-top: 3rem;
     }
+    .heading>p{
+        font-size:50px ;
+    }
+    #fetchbtn{
+        width: 200px;
+    }
+}
+
+@media  screen and (max-width:460px) {
+
+.welcome>p{
+    font-size: 40px;
+}
+.location-info>p{
+    font-size: 20px;
+}
+.latgAndLong{
+    
+    margin-top: 40px;
+ }
+
+ .lat,.long{
+    flex:1 1 50px;
+    width:290px ;
+ }
+ .mapData{
+    width: 280px;
+    height: 400px;
+}
+
 }
